@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Simple bar chart example.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2025/main/data/bfro_reports_fall2022.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "state", "type": "nominal", "title": "State"},
+    "y": {"aggregate": "count", "title": "Number of Reports"},
+    "tooltip": [
+      {"field": "state", "type": "nominal"},
+      {"aggregate": "count", "title": "Count"}
+    ]
+  },
+  "width": 600,
+  "height": 400,
+  "config": {}
+}
