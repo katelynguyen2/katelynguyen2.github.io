@@ -2,7 +2,10 @@
 ---
 title: "HW5 — Part 5.1 writeup"
 ---
-<vegachart schema-url="{{ site.baseurl }}/assets/json/direct_from_editor.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/visualization.vl.json" style="width: 100%"></vegachart>
+
+Dataset: https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv  
+
 
 This visualization shows a bar chart of Bigfoot reports grouped by U.S. state. The x axis shows the state names the y axis shows the count of reports. The tooltips displaying both values for more precise readouts. The default categorical color palette works well because each bar represents a distinct state so color is not very important. There were no major data transformations required, the chart uses Vega-Lite’s aggregation function (aggregate: "count") from the dataset. It was interesting to see that Washington had the highest number of reports. 
 
