@@ -2,11 +2,16 @@
 ---
 title: "HW5 — Part 5.1 writeup"
 ---
-<vegachart schema-url="{{ site.baseurl }}/assets/json/visualization.vl.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/chart.json" style="width:100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/chart2.json" style="width:100%"></vegachart>
 
 Dataset: https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv  
 
 
-This visualization shows a bar chart of Bigfoot reports grouped by U.S. state. The x axis shows the state names the y axis shows the count of reports. The tooltips displaying both values for more precise readouts. The default categorical color palette works well because each bar represents a distinct state so color is not very important. There were no major data transformations required, the chart uses Vega-Lite’s aggregation function (aggregate: "count") from the dataset. It was interesting to see that Washington had the highest number of reports. 
+I used the Bigfoot dataset for these visualizations. 
+
+The chart visualization shows a bar chart of Bigfoot reports grouped by U.S. state. The x axis shows the state names the y axis shows the count of reports. The tooltips displaying both values for more precise readouts. The default categorical color palette works well because each bar represents a distinct state so color is not very important. There were no major data transformations required, the chart uses Vega-Lite’s aggregation function (aggregate: "count") from the dataset. It was interesting to see that Washington had the highest number of reports. 
+
+The chart2 visualization is a scatter plot of Bigfoot reports over time. The dots represent the number of reports in a year. The x axis shows the years of the reports and the y axis shows the count of reports per year. The color shows the number of reports, with darker orange for higher counts. The tooltips display both the year and the corresponding number of reports. Interactivity allows users to zoom. It is interesting to see the highest count was in 2004.
 
 
