@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Simple bar chart example.",
+  "description": "Bar chart of Bigfoot reports by state",
   "data": {
-    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2025/main/data/bfro_reports_fall2022.csv"
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv"
   },
   "mark": "bar",
   "encoding": {
