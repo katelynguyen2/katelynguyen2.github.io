@@ -10,12 +10,9 @@ custom_js:
   - justcharts
 
 ---
-title: "Grocery Store Access in Chicago"
-author: "Katelyn Nguyen"
-date: 2025-12-08
-
 
 # Grocery Store Access in Chicago  
+# By Katelyn Nguyen
 ### A look at where stores are open, closed, or take online orders only
 
 ## Dataset Context  
