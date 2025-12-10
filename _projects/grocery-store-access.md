@@ -30,21 +30,20 @@ I focus on questions like:
 The goal is to make these patterns easy to see.
 
 
+## Dashboard Preview (GIF)
 
-# Main Interactive Visualization  
+![Animated preview of the grocery dashboard]({{ '/assets/img/grocery_dashboard_demo.gif' | relative_url }})
+
+*Animated GIF showing how the status dropdown changes the bars in the chart.*
+
+
+## Main Interactive Visualization  
 ### Stores per ZIP Code, Filtered by Status
 
-Use the dropdown menu in the chart below to choose a store status (OPEN, CLOSED, ONLINE ONLY).  
+Use the dropdown menu in the chart below to choose a store status (**OPEN**, **CLOSED**, **ONLINE ONLY**, etc.).  
 The chart will update to show how many stores in each ZIP code match that status.
 
-<div id="zip-chart"></div>
-
-<script>
-  var specUrl = "{{ '/assets/json/grocery_top_zip_by_status.json' | relative_url }}";
-
-  vegaEmbed('#zip-chart', specUrl, {actions: false}).then(function(result) {
-  }).catch(console.error);
-</script>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/grocery_top_zip_by_status.json" style="width: 100%"></vegachart>
 
 ### How to Read This Chart  
 - Each bar represents one ZIP code.  
