@@ -11,23 +11,21 @@ custom_js:
 ---
 
 # Grocery Store Access in Chicago  
-## By Katelyn Nguyen
+By Katelyn Nguyen
 A look at where stores are open, closed, or take online orders only
 
 ## Dataset Context  
-This project uses the Chicago Grocery Store Status dataset. It lists grocery stores in Chicago and labels each store as OPEN, CLOSED, ONLINE ONLY.  
-The dataset also includes the store’s address, ZIP code, and its location on a map.
+This project uses the Chicago Grocery Store Status dataset. It lists grocery stores in Chicago and labels each store as OPEN, CLOSED, ONLINE ONLY. The dataset also includes the store’s address, ZIP code, and its location on a map.
 
-Even though the dataset is simple, it gives a meaningful snapshot of food accessibility in Chicago. Grocery stores play a major role in daily life—people rely on them for fresh produce, basic supplies, and affordable meal options. By showing where stores remain open, where closures are happening, and where online-only services are becoming more common, the dataset helps us see patterns that aren’t easy to notice in everyday life.
+Even though the dataset is simple, it gives a meaningful snapshot of food accessibility in Chicago. Grocery stores play a major role in daily life, people rely on them for fresh produce, basic supplies, and affordable meal options. By showing where stores remain open, where closures are happening, and where online only services are becoming more common, the dataset helps us see patterns that aren’t easy to notice in everyday life.
 
 
 ## Project Goal  
-This project explores **how grocery store availability differs across Chicago ZIP codes**.  
+This project explores how grocery store availability differs across Chicago ZIP codes.  
 I focus on questions like:
 
 - Which ZIP codes have the most open stores?  
 - Which areas have many closures?  
-- Are online-only stores grouped in certain areas or spread out?
 
 The goal is to make these patterns easy to see.
 
@@ -97,10 +95,9 @@ These charts are designed to be easy to understand
 
 A few things the dataset does not include:
 
-- **Population or income information**  
-- **Store size or type**  
-- **Updated status over time**  
-  (A store marked CLOSED may reopen later.)
+- Population or income information
+- Store size or type
+- Updated status over time (A store marked CLOSED may reopen later)
 
 Future work could consider population counts, income data, or transportation options to better understand food access gaps across Chicago.
 
