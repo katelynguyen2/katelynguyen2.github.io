@@ -12,7 +12,7 @@ custom_js:
 
 # Grocery Store Access in Chicago  
 By Katelyn Nguyen
-A look at where stores are open, closed, or take online orders only
+ A look at where stores are open, closed, or take online orders only
 
 ## Dataset Context  
 This project uses the Chicago Grocery Store Status dataset. It lists grocery stores in Chicago and labels each store as OPEN, CLOSED, ONLINE ONLY. The dataset also includes the store’s address, ZIP code, and its location on a map.
