@@ -1,7 +1,6 @@
 ---
 name: Grocery Store Access in Chicago
 tools: [Python, Altair, vega-lite]
-image: assets/img/grocery_dashboard_demo.gif
 description: An interactive project exploring where Chicago grocery stores are open, closed or online only.
 custom_js:
   - vega.min
@@ -32,7 +31,7 @@ The goal is to make these patterns easy to see.
 
 ## Dashboard Preview (GIF)
 
-![Animated preview of the grocery dashboard]({{ '/assets/img/grocery_dashboard_demo.gif' | relative_url }})
+![Animated preview of the grocery dashboard]({{ '/assets/pngs/grocery_dashboard_demo.gif' | relative_url }})
 
 *Animated GIF showing how the status dropdown changes the bars in the chart.*
 
