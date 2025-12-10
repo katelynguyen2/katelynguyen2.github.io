@@ -65,12 +65,9 @@ Instead of searching through a long table of addresses, you can view neighborhoo
 
 Here is a simple count of how many stores fall into each status category:
 
-<div style="max-width: 400px;">
-  <vegachart 
-    schema-url="{{ site.baseurl }}/assets/json/grocery_top_zip_by_status.json"
-    style="width: 100%;"
-  ></vegachart>
-</div>
+<img src="{{ '/assets/pngs/store_status_hist.png' | relative_url }}"
+     alt="Bar chart of overall store statuses"
+     style="width: 400px; height: auto; display: block;">
 
 *Figure 1. Number of stores in each status category.*
 
