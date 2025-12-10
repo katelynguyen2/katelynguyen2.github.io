@@ -1,0 +1,116 @@
+---
+layout: project
+title: "Grocery Store Access in Chicago"
+author: "Katelyn Nguyen"
+date: 2025-12-08
+---
+
+# Grocery Store Access in Chicago  
+### A look at where stores are open, closed, or take online orders only
+
+## Dataset Context  
+This project uses the Chicago Grocery Store Status dataset. It lists grocery stores in Chicago and labels each store as OPEN, CLOSED, ONLINE ONLY.  
+The dataset also includes the store’s address, ZIP code, and its location on a map.
+
+The dataset gives a helpful picture of food access across the city. Grocery stores are important for daily life, so seeing where stores are open or closing can show which neighborhoods may have more or fewer options.
+
+---
+
+## Project Goal  
+This project explores **how grocery store availability differs across Chicago ZIP codes**.  
+I focus on questions like:
+
+- Which ZIP codes have the most open stores?  
+- Which areas have many closures?  
+- Are online-only stores grouped in certain areas or spread out?
+
+The goal is to make these patterns easy to see.
+
+---
+
+# Main Interactive Visualization  
+### Stores per ZIP Code, Filtered by Status
+
+Use the dropdown menu in the chart below to choose a store status (OPEN, CLOSED, ONLINE ONLY).  
+The chart will update to show how many stores in each ZIP code match that status.
+
+<div id="zip-chart"></div>
+
+<script>
+  var specUrl = "{{ '/assets/json/grocery_top_zip_by_status.json' | relative_url }}";
+
+  vegaEmbed('#zip-chart', specUrl, {actions: false}).then(function(result) {
+  }).catch(console.error);
+</script>
+
+### How to Read This Chart  
+- Each bar represents one ZIP code.  
+- The height of the bar shows **how many stores in that ZIP code** have the selected status.
+
+This makes it easy to see:
+
+- ZIP codes with **many open stores**  
+- Areas with **high numbers of closures**  
+- ZIP codes with **few or no stores**  
+- Where **online-only** stores appear
+
+Instead of searching through a long table of addresses, you can view neighborhood differences instantly.
+
+---
+
+# Contextual Visualization  
+### Overall Breakdown of Store Statuses
+
+Here is a simple count of how many stores fall into each status category:
+
+![Bar chart of overall store statuses]({{ '/assets/pngs/store_status_hist.png' | relative_url }})
+
+*Figure 1. Number of stores in each status category.*
+
+This chart helps give perspective. Even if some ZIP codes show many closures, **most stores in the dataset are still open**. Looking at the totals helps avoid misinterpreting the interactive chart.
+
+---
+
+# How to Explore the Results
+
+If you are new to data or new to Chicago, you can read the visuals in this order:
+
+1. **Start with the interactive bar chart.**  
+   Pick a status and look for ZIP codes with tall bars or no bars.
+
+2. **Use the summary chart above.**  
+   It shows how common each store status is overall.
+
+3. **Think about neighborhood access.**  
+   - ZIP codes with many open stores likely have strong access.  
+   - ZIP codes with few stores may have limited access.
+
+These charts are designed to be easy to understand
+
+---
+
+# Limitations and Next Steps  
+
+A few things the dataset does not include:
+
+- **Population or income information**  
+- **Store size or type**  
+- **Updated status over time**  
+  (A store marked CLOSED may reopen later.)
+
+Future work could consider population counts, income data, or transportation options to better understand food access gaps across Chicago.
+
+---
+
+# Citations 
+
+City of Chicago. (n.d.). Grocery Store Status Map — Historical. Chicago Data Portal. https://data.cityofchicago.org/Health-Human-Services/Grocery-Store-Status-Map-Historical/rish-pa6g
+
+---
+
+# Analysis Notebook  
+
+You can view the full notebook used to clean the data and create the visualization here:
+
+[Final Project Analysis Notebook]({{ '/python_notebooks/final_project_part3_1.ipynb' | relative_url }})
+
