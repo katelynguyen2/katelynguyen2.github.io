@@ -31,7 +31,9 @@ The goal is to make these patterns easy to see.
 
 ## Dashboard Preview (GIF)
 
-![Animated preview of the grocery dashboard]({{ '/assets/pngs/grocery_dashboard_demo.gif' | relative_url }})
+<img src="{{ '/assets/img/grocery_dashboard_demo.gif' | relative_url }}" 
+     alt="Grocery dashboard preview"
+     style="max-width: 400px; width: 100%; height: auto; border-radius: 8px;"/>
 
 *Animated GIF showing how the status dropdown changes the bars in the chart.*
 
@@ -63,7 +65,12 @@ Instead of searching through a long table of addresses, you can view neighborhoo
 
 Here is a simple count of how many stores fall into each status category:
 
-![Bar chart of overall store statuses]({{ '/assets/pngs/store_status_hist.png' | relative_url }})
+<div style="max-width: 400px;">
+  <vegachart 
+    schema-url="{{ site.baseurl }}/assets/json/grocery_top_zip_by_status.json"
+    style="width: 100%;"
+  ></vegachart>
+</div>
 
 *Figure 1. Number of stores in each status category.*
 
