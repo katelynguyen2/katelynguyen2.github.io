@@ -1,5 +1,15 @@
 ---
-layout: project
+name: Grocery Store Access in Chicago
+tools: [Python, Altair, vega-lite]
+image: assets/img/grocery_dashboard_demo.gif
+description: An interactive project exploring where Chicago grocery stores are open, closed or online only.
+custom_js:
+  - vega.min
+  - vega-lite.min
+  - vega-embed.min
+  - justcharts
+
+---
 title: "Grocery Store Access in Chicago"
 author: "Katelyn Nguyen"
 date: 2025-12-08
