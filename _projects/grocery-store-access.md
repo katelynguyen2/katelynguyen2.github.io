@@ -8,7 +8,6 @@ custom_js:
   - vega-lite.min
   - vega-embed.min
   - justcharts
-
 ---
 
 # Grocery Store Access in Chicago  
