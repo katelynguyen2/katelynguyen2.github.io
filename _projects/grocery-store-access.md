@@ -31,7 +31,7 @@ The goal is to make these patterns easy to see.
 
 ## Dashboard Preview (GIF)
 
-<img src="{{ '/assets/img/grocery_dashboard_demo.gif' | relative_url }}" 
+<img src="{{ '/assets/pngs/grocery_dashboard_demo.gif' | relative_url }}" 
      alt="Grocery dashboard preview"
      style="max-width: 400px; width: 100%; height: auto; border-radius: 8px;"/>
 
